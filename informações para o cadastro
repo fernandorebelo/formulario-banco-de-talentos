@@ -1,0 +1,115 @@
+formulário - banco de talentos
+
+//campos
+
+	//currículo
+	adicione seu currículo (pdf)
+
+	//dados pessoais
+	foto
+	nome completo
+	data de nascimento
+	gênero
+		masculino
+		feminino
+		outro, qual
+		prefiro não informar
+	estado civil
+		casado
+		solteiro
+		união estável
+		divorciado
+	cor/etnia
+		branca
+		preta/negra
+		indígena		
+		amarela
+		parda
+		não declarar
+
+	//dados contato
+	email
+	telefone
+		número
+		podemos contatar via whatsapp?
+			sim / não
+
+	//endereço
+	cep
+	bairro
+	cidade
+	estado
+	rua e número
+
+	//informações gerais
+	possui habilitação
+		sim ou não
+	habilitações motorista
+		A
+		B
+		C
+		D
+		E
+
+	//redes sociais
+	linkedin
+	github
+	instagram
+	twitter
+
+	//formação
+	escolaridade
+		fundamental 
+		fundamental incompleto
+		médio
+		médio incompleto
+		superior
+		superior incompleto
+		pós graduação/MBA
+		pós graduação/MBA incompleta
+		mestrado
+		mestrado incompleto
+		outra, qual
+	está realizando algum curso de especialização
+	sim ou não
+		se sim, qual
+
+	//dados do cargo
+	nível de conhecimento
+		estágiário
+		junior
+		pleno
+		senior
+		outro, qual
+	cargo pretendido
+		backend
+		front-end
+		fullstack
+	stack desejada
+		java
+		php
+		c / c++
+		c#
+		outro, qual
+	turno disponível para trabalhar
+		matutino
+		vespertino
+		noturno
+	tipo de trabalho desejado
+		remoto
+		presencial
+		híbrido
+	possui alguma deficiência
+		sim ou não
+		se sim, qual
+	pretensão salarial
+
+	//último ou atual emprego
+	(deixar em branco caso não haja)
+	empresa
+	cargo
+	atribuições dentro da empresa
+	data de entrada
+	data de saída
+		data
+		emprego atual
