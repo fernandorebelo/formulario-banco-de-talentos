@@ -78,79 +78,72 @@
 
               <div class="row mb-3">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                  <label class="col-form-label" for="curriculo">Adicione seu currículo em PDF.</label>
-                  <input
-                    class="col-form-control"
-                    type="file"
-                    name="curriculo"
-                    id="curriculo"
-                  />
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="curriculo">Currículo</label>
+                    <input type="file" class="form-control" id="curriculo">
+                  </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                  <label for="nomeCompleto" class="col-form-label"
-                  >Nome</label>
-                  <input
-                    type="text"
-                    name="nomeCompleto"
-                    id="nomeCompleto"
-                    class="col-form-control float-end"
-                    placeholder="Nome completo"
-                    required
-                  />
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="nome">Nome</span>
+                    <input type="text" class="form-control" placeholder="Nome completo" id="nome">
+                  </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                  <label for="dataNascimento" class="col col-form-label">Data de nascimento</label>
-                  <input
-                    type="date"
-                    name="dataNascimento"
-                    id="dataNascimento"
-                    class="col-form-control float-end"
-                    required
-                  />
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="nascimento">Data de nascimento</span>
+                    <input type="date" class="form-control" placeholder="Nome completo" id="nascimento">
+                  </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                  <label for="estadoCivil" class="col-form-label " id="estadoCivil">Estado civil</label>
-                  <select
-                    class="col-form-select float-end"
-                    aria-label="Estado civil"
-                    id="estadoCivil"
-                    required>
-                    <option selected disabled>Escola uma opção</option>
-                    <option value="solteiro">Solteiro</option>
-                    <option value="casado">Casado</option>
-                    <option value="uniaoEstavel">União estável</option>
-                    <option value="divorciado">Divorciado</option>
-                  </select>
+                  <div class="input-group mb-3">
+                    <label for="estadoCivil" class="input-group-text" id="estadoCivil">Estado civil</label>
+                    <select
+                      class="form-select"
+                      aria-label="Estado civil"
+                      id="estadoCivil"
+                      required>
+                      <option selected disabled>Escola uma opção</option>
+                      <option value="solteiro">Solteiro</option>
+                      <option value="casado">Casado</option>
+                      <option value="uniaoEstavel">União estável</option>
+                      <option value="divorciado">Divorciado</option>
+                    </select>
+                  </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12" >
-                  <label for="etnia" class="col-form-label" id="etnia">Etnia</label>
-                  <select
-                    class="col-form-select float-end"
-                    aria-label="Cor Etnia"
-                    id="etnia"
-                    required>
-                    <option selected disabled>Escola uma opção</option>
-                    <option value="branco">Branco</option>
-                    <option value="preto">Preto/Negro</option>
-                    <option value="indigena">Indígena</option>
-                    <option value="amarelo">Amarelo</option>
-                    <option value="pardo">Pardo</option>
-                    <option value="naoDeclarado">Não declarar</option>
-                  </select>
+                  <div class="input-group mb-3">
+                    <label for="etnia" class="input-group-text" id="etnia">Etnia</label>
+                    <select
+                      class="form-select"
+                      aria-label="Cor Etnia"
+                      id="etnia"
+                      required>
+                      <option selected disabled>Escola uma opção</option>
+                      <option value="branco">Branco</option>
+                      <option value="preto">Preto/Negro</option>
+                      <option value="indigena">Indígena</option>
+                      <option value="amarelo">Amarelo</option>
+                      <option value="pardo">Pardo</option>
+                      <option value="naoDeclarado">Não declarar</option>
+                    </select>
+                  </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                  <label for="genero" class="col-form-control">Gênero</label>
-                  <select class="col-form-select float-end" aria-label="Gênero" id="genero" required>
-                    <option selected disabled>Escola uma opção</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="nãoInformado">Não informar</option>
-                  </select>
+                  <div class="input-group mb-3">
+                    <label for="genero" class="input-group-text">Gênero</label>
+                    <select class="form-select" aria-label="Gênero" id="genero" required>
+                      <option selected disabled>Escola uma opção</option>
+                      <option value="masculino">Masculino</option>
+                      <option value="feminino">Feminino</option>
+                      <option value="nãoInformado">Não informar</option>
+                    </select>
+                  </div>
                 </div>
 
               </div>
@@ -305,28 +298,261 @@
               <!-- Informações gerais -->
               <hr />
               <h2 class="text-center">Informações gerais</h2>
+              <div class="row mb-3">
+                <p>Habilitação</p>
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div>
+                    <input type="checkbox" name="habilitacao" id="habilitacao" class="form-check-input">
+                    <label for="habilitacao" class="form-check-label" nome="habilitacao[]"></label>A
+                  </div>
 
-              
+                  <div>
+                    <input type="checkbox" name="habilitacao" id="habilitacao" class="form-check-input">
+                    <label for="habilitacao" class="form-check-label" nome="habilitacao[]"></label>B
+                  </div>
+
+                  <div>
+                    <input type="checkbox" name="habilitacao" id="habilitacao" class="form-check-input">
+                    <label for="habilitacao" class="form-check-label" nome="habilitacao[]"></label>C
+                  </div>
+
+                  <div>
+                    <input type="checkbox" name="habilitacao" id="habilitacao" class="form-check-input">
+                    <label for="habilitacao" class="form-check-label" nome="habilitacao[]"></label>D
+                  </div>
+
+                  <div>
+                    <input type="checkbox" name="habilitacao" id="habilitacao" class="form-check-input">
+                    <label for="habilitacao" class="form-check-label" nome="habilitacao[]"></label>E
+                  </div>
+                </div>
+              </div>
               <!-- Fim informações gerais -->
 
               <!-- Redes sociais -->
               <hr />
               <h2 class="text-center">Redes sociais</h2>
+              <div class="row mb-3">
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="linkedin">LinkedIn</span>
+                    <input type="text" class="form-control" placeholder="Insira a URL" id="linkedin">
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="linkedin">GitHub</span>
+                    <input type="text" class="form-control" placeholder="Insira a URL" id="linkedin">
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="linkedin">Instagram</span>
+                    <input type="text" class="form-control" placeholder="Insira a URL" id="linkedin">
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="linkedin">Twitter</span>
+                    <input type="text" class="form-control" placeholder="Insira a URL" id="linkedin">
+                  </div>
+                </div>
+
+              </div>
               <!-- Fim redes sociais -->
 
               <!-- Formação -->
               <hr />
               <h2 class="text-center">Formação</h2>
+              <div class="row mb-3">
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="escolaridade">Escolaridade</label>
+                    <select class="form-select" id="escolaridade" onchange="ativarForm()">
+                      <option selected disabled>Escolha uma opção</option>
+                      <option value="Fundamental">Fundamental</option>
+                      <option value="Fundamental incompleto">Fundamental incompleto</option>
+                      <option value="médio">Médio</option>
+                      <option value="médio incompleto">Médio incompleto</option>
+                      <option value="superior">Superior</option>
+                      <option value="superior incompleto">Superior incompleto</option>
+                      <option value="pós-mba">Pós-graduação/MBA</option>
+                      <option value="pós-mba-incompleto">Pós-graduação/MBA incompleto</option>
+                      <option value="mestrado">Mestrado</option>
+                      <option value="mestrado incompleto">Mestrado incompleto</option>
+                      <option value="outroCurso">Outro</option>
+                    </select>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="inputOutroCurso" placeholder="Outro curso..." disabled>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                      <span class="input-group-text" id="especializacao">Está realizando alguma especialização/curso?</span>
+                      <input type="text" class="form-control" id="especializacao">
+                  </div>
+                </div>
+              </div>
               <!-- Fim formação -->
 
               <!-- Dados do cargo pretendido -->
               <hr />
-              <h2 class="text-center">Informações do cargo pretendido</h2>
+              <h2 class="text-center">Informações para o cargo pretendido</h2>
+
+              <div class="row mb-3">
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="conhecimento">Nível de conhecimento</label>
+                    <select class="form-select" id="conhecimento" onchange="ativarForm()">
+                      <option value="" disabled selected>Escolha uma opção</option>
+                      <option value="estagio">Estagiário</option>
+                      <option value="junior">Junior</option>
+                      <option value="pleno">Pleno</option>
+                      <option value="senior">Senior</option>
+                      <option value="outroNivel">Outro</option>
+                    </select>
+                    <div class="input-group mb-3">
+                      <input type="text" name="" class="form-control" id="inputNivel" placeholder="Outro nível de conhecimento..." disabled>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="cargo">Cargo pretendido</label>
+                    <select class="form-select" id="cargo" onchange="ativarForm()">
+                      <option value="" disabled selected>Escolha uma opção</option>
+                      <option value="backend">Backend</option>
+                      <option value="frontend">Front-end</option>
+                      <option value="fullstack">Fullstack</option>
+                      <option value="outroCargo">Outro</option>
+                    </select>
+                    <div class="input-group mb-3">
+                      <input type="text" name="" class="form-control" id="inputCargo" placeholder="Outro cargo pretendido..." disabled>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="cargo">Stack desejada</label>
+                    <select class="form-select" id="stack" onchange="ativarForm()">
+                      <option value="" disabled selected>Escolha uma opção</option>
+                      <option value="java">Java</option>
+                      <option value="php">Php</option>
+                      <option value="c">C / C++</option>
+                      <option value="c#">C#</option>
+                      <option value="outroStack">Outro</option>
+                    </select>
+                    <div class="input-group mb-3">
+                      <input type="text" name="" class="form-control" id="inputStack" placeholder="Outra stack..." disabled>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="turno">Turno disponível</label>
+                    <select class="form-select" id="turno">
+                      <option value="" disabled selected>Escolha uma opção</option>
+                      <option value="matutino">Matutino</option>
+                      <option value="vespertino">Vespertino</option>
+                      <option value="noturno">Noturno</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="tipoTrabalho">Tipo de trabalho</label>
+                    <select class="form-select" id="tipoTrabalho">
+                      <option value="" disabled selected>Escolha uma opção</option>
+                      <option value="remoto">Remoto</option>
+                      <option value="presencial">Presencial</option>
+                      <option value="hibrido">Híbrido</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="deficiencia">Possui alguma deficiência? PCD</label>
+                    <select class="form-select" id="tipoTrabalho">
+                      <option value="" disabled selected>Escolha uma opção</option>
+                      <option value="nao">Não</option>
+                      <option value="sim">Sim</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="salario">Pretensão salarial</label>
+                    <span class="input-group-text">R$</span>
+                    <input type="text" name="salario" id="salario" class="form-control" placeholder="0,00">
+                  </div>
+                </div>
+              </div>
               <!-- Fim de Dados do cargo pretendido -->
 
               <!-- Último ou atual emprego -->
               <hr />
               <h2 class="text-center">Último/atual emprego</h2>
+
+              <div class="row mb-3">
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="empresa">Empresa</label>
+                    <input type="text" name="empresa" id="empresa" class="form-control" placeholder="Nome da empresa">
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="cargo">Cargo</label>
+                    <input type="text" name="cargo" id="cargo" class="form-control" placeholder="Cargo na empresa">
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="atribuicoes">Atribuições dentro da empresa</label>
+                    <input type="text" name="cargo" id="atribuicoes" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="dataEntrada">Data de entrada</label>
+                    <input type="date" name="dataEntrada" id="dataEntrada" class="form-control">
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="dataSaida">Data de saída</label>
+                    <input type="date" name="dataSaida" id="dataSaida" class="form-control" onchange="checkDate(this)">
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form-check">
+                  <div class="input-group mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="atualmente" onclick="onCheck(this)">
+                      <label class="form-check-label" for="atualmente">
+                        Atualmente
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
               <!-- Fim do último ou atual emprego -->
               <hr />
               <input type="submit" value="Enviar" />
@@ -351,6 +577,52 @@
           }
         });
       });
+    </script>
+    <script>
+      function ativarForm(){
+        var opcaoEscolaridade = document.getElementById('escolaridade').value
+        var opcaoNivelConhecimento = document.getElementById('conhecimento').value
+        var opcaoCargo = document.getElementById('cargo').value
+        var opcaoStack = document.getElementById('stack').value
+
+        if(opcaoEscolaridade == 'outroCurso'){
+          document.getElementById('inputOutroCurso').disabled = false
+
+        }else{
+          document.getElementById('inputOutroCurso').disabled = true
+        }
+
+        if(opcaoNivelConhecimento == 'outroNivel'){
+          document.getElementById('inputNivel').disabled = false
+
+        }else{
+          document.getElementById('inputNivel').disabled = true
+        }
+
+        if(opcaoCargo == 'outroCargo'){
+          document.getElementById('inputCargo').disabled = false
+        }else{
+          document.getElementById('inputCargo').disabled = true
+        }
+
+        if(opcaoStack == 'outroStack'){
+          document.getElementById('inputStack').disabled = false
+        }else{
+          document.getElementById('inputStack').disabled = true
+        }
+      }
+    </script>
+
+    <script>
+      function onCheck(checkbox) {
+        var dateElement = document.getElementById('dataSaida');
+        dateElement.disabled = checkbox.checked;
+        if (checkbox.checked) {
+          dateElement.value = '';
+        }else{
+          dateElement.value = '';
+        }
+      }
     </script>
   </body>
 </html>
