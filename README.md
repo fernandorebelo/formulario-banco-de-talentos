@@ -1,6 +1,8 @@
 # Formulário para Cadastro de Banco de Talentos
 
-Stacks: HTML, Bootstrap e JavaScript
+Stacks: HTML, Bootstrap e JavaScript.
+
+Preenchimento automático com CEP, ativação de campos para outras informações.
 
 
 ![image](https://user-images.githubusercontent.com/94297628/187694919-24388c0e-8720-47ae-9741-77458094f0a1.png)
